@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice java</title>
+</head>
+
+<body>
+
+
+
+
+
+    <!-- 
+    
+    <h1 id="one">Hello this is is tuhin</h1>
+
+
+    <button onclick="alert('Hello')"> Click me</button>
+
+    <button onclick="myMessage()">Click me 2</button>
+
+    <p id="two">
+
+    </p>
+
+    <img id="three" src="images/image 1-2.png" alt="" height="300px" width="300px"> --> 
+
+    <!-- 
+    <div id="myDiv" class="class1 class2">
+        <h1>This is heading 1</h1>
+        <h1>This is heading 2</h1>
+        <h1>This is heading 3</h1>
+    </div>
+
+    <button onclick="prev()">previous</button>
+    <img src="images/image 1-2.png" alt="" height="300px" width="300px">
+    <button onclick="next()">Next</button> -->
+
+    <p >This is parargaph</p>
+    <p>this is paragraph 2</p>
+    <button onclick="addstyle()">Add style</button>
+    <button onclick="removestyle()">remove style</button>
+
+
+    <button>Click me</button>
+
+    <style>
+        .parastyle{
+            color: red;
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;
+        }  
+    </style>
+    
+    <p>I miss you</p>
+
+
+
+    <script>
+
+       document.getElementsByTagName("p")[0].addEventListener("click", function(){
+            alert("I miss you too");
+        })
+
+       /* document.getElementsByTagName('button')[0].addEventListener("click", function(){
+            alert("hello");
+        });*/
+
+       /* var para= document.getElementsByTagName("p")[0];
+        para.addEventListener("mouseover",function(){
+para.classList.add("parastyle");
+        });  var para= document.getElementsByTagName("p")[0];
+        para.addEventListener("mouseout",function(){
+para.classList.remove("parastyle");
+        });*/
+
+
+
+       
+            
+      
+
+  function addstyle(){
+        var myVar= document.getElementsByTagName("p")[1];
+        myVar.classList.add("parastyle"); 
+    }
+
+    
+function removestyle()
+{
+    var myVar= document.getElementsByTagName("p")[1];
+        myVar.classList.remove("parastyle"); 
+}
+
+ 
+
+
+
+       /* var arr = ["images/image 1-2.png", "images/1.jpg", "images/2.jpg"];
+        var imglist = document.querySelector("img");
+
+        var count = 0;
+        function prev() {
+            count--;
+
+            if (count < 0) {
+                count = arr.length-1;
+                imglist.src = arr[count];
+            }
+
+            else {
+                imglist.src = arr[count];
+            }
+
+
+        }
+
+        function next() {
+
+            count++;
+
+            if (count >= arr.length) {
+                count = 0;
+                imglist.src = arr[count];
+            }
+
+            else {
+                imglist.src = arr[count];
+            }
+
+        }*/
+
+
+
+        /*var classlist = document.getElementById('myDiv').classList;
+        document.write(classlist);
+
+
+        //  var classlist = document.getElementById('myDiv').classList.add("class2");
+        //  document.write(classlist);
+
+
+        classlist = document.getElementById('myDiv').classList.remove('class1');
+        document.write(classlist);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // document.getElementById("one").innerHTML='This is first headding';
+        // document.querySelector('#one').innerHTML="This is query selector";
+        /*
+                document.querySelectorAll("h1")[0].innerHTML="This is query selector all";
+        
+                function myMessage(){
+                   document.getElementById("two").innerHTML='You click on button two ';
+                   document.getElementById("three").src="images/image 1.png";
+                }
+        
+                var headding4= document.createElement('h1');
+                var text= document.createTextNode("This is headding 4");
+                headding4.appendChild(text);
+        
+                var my_Div= document.getElementById("myDiv");
+                my_Div.appendChild(headding4);
+        
+        
+                var headding0= document.querySelectorAll("h1")[2];
+               my_Div.removeChild(headding0);
+        
+        
+               var headding = document.createElement('h1');
+               var text= document.createTextNode('This is headding 4');
+               headding.appendChild(text);
+        
+               var my_Div= document.getElementById('myDiv');
+        
+               var headding0= document.getElementsByTagName('h1')[0];
+               my_Div.insertBefore(headding, headding0);*/
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <style>
+        .btn {
+            background-color: coral;
+            box-shadow: 2px 2px 1px gray;
+        }
+
+        hr{
+            width: 45%;
+        }
+        div{
+            display: flex;
+        }
+    </style>
+
+    <div>
+        <hr>
+        <span>or</span>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <h3>You have not clicked any button</h3>
+    <button class="btn">Button 1</button>
+    <button class="btn">Button 2</button>
+    <button class="btn">Button 3</button>
+
+
+
+    <script>
+
+        /*for (var i = 0; i < 3; i++) {
+            document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+                var text = this.innerHTML;
+                document.querySelector("h3").innerHTML = text + " is clicked"
+            });
+        }*/
+
+        for (var i = 0; i < 3; i++) {
+            document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+                var audioText = this.innerHTML;
+                
+
+
+                switch (audioText) {
+                    case "Button 1":
+                        var audio = new Audio("sounds/a.mp3");
+                        audio.play();
+                        break;
+
+                    case "Button 2":
+                        var audio = new Audio("sounds/b.mp3");
+                        audio.play();
+                        break;
+
+                    case "Button 3":
+                        var audio = new Audio("sounds/c.mp3");
+                        audio.play();
+                        break;
+                }
+
+            })
+
+
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

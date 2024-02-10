@@ -8,7 +8,7 @@ var name= 'fojle tuhin';
 console. log(typeof name);
 
 var hot= true;
-var coll= false;
+var cool= false;
 
 console. log( typeof hot);
 var FirstName= `FOJLE`;
@@ -27,7 +27,7 @@ console.log(list1);
 
 var price1= 45;
 var price2=34;
-var total = price1 % price2;
+var total = price1 / price2;
 console. log(total);
 
 var list2= 38.454
@@ -54,12 +54,13 @@ var date =new Date('2022-12-01');
 console.log(date);
 
 
-var text2= "tiuhin";
-var text1= "fpjle";
+var text1= "f0jle";
+var text2= "tuhin";
+
 
 var text = text2.concat(text1);
 console.log(text);
 
 
-text= text1.slice(1,2);
+text= text1.slice(1,3);
 console.log(text);
