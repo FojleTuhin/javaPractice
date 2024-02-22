@@ -76,3 +76,15 @@ for(const zo of animal){
   console.log(zo)
 }
 */
+
+
+class bus{
+  constructor(name, age){
+    this.name=name;
+    this.age=age;
+  }
+}
+
+
+const hanifBus=new bus(`tuhin`,`23`);
+console.log(hanifBus)
