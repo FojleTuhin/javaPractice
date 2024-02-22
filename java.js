@@ -99,4 +99,10 @@ class truck extends bus{
 
 
 const hanifBus=new truck(`tuhin`,23,5,`red`);
-console.log(typeof hanifBus)
+// console.log(typeof hanifBus)
+
+
+function min(nums) { 
+  return Math.min(nums) 
+}
+console.log(min( [1,3,2 ]));
