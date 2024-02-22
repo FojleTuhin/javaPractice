@@ -86,5 +86,17 @@ class bus{
 }
 
 
-const hanifBus=new bus(`tuhin`,`23`);
-console.log(hanifBus)
+
+
+
+class truck extends bus{
+  constructor(name, age, seat, color){
+    super(name,age)
+    this.seat=seat;
+    this.color=color;
+  }
+}
+
+
+const hanifBus=new truck(`tuhin`,23,5,`red`);
+console.log(typeof hanifBus)
