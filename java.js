@@ -141,4 +141,15 @@ if ("2" === 2) {
  function work(x, y = 4) {
   return x + y;
  }
- console.log(work(32);
+//  console.log(work(32);
+
+function setTime(){
+  let date=new Date();
+  let hour= date.getHours();
+  let minutes=date.getMinutes();
+  let seconds=date.getSeconds();
+  let time=
+  console.log(time)
+}
+
+setTime();
