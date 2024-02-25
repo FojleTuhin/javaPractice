@@ -143,6 +143,8 @@ if ("2" === 2) {
  }
 //  console.log(work(32);
 
+document.getElementById('Clock').addEventListener('click',setTime);
+
 function setTime(){
   let date=new Date();
   let hour= date.getHours();
@@ -150,8 +152,7 @@ function setTime(){
   let seconds=date.getSeconds();
   let time= hour + ":"+ minutes+":"+seconds
  
-
-  setInterval(setTime,100)
+  document.getElementById('clock-show').innerText=time;
+  // setInterval(setTime,100)
 }
 
-setTime();
