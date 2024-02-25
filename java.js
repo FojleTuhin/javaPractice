@@ -150,9 +150,17 @@ function setTime(){
   let hour= date.getHours();
   let minutes=date.getMinutes();
   let seconds=date.getSeconds();
+
+  minutes=timerHandle(minutes);
+  seconds=timerHandle(seconds);
   let time= hour + ":"+ minutes+":"+seconds
  
   document.getElementById('clock-show').innerText=time;
-  // setInterval(setTime,100)
+  setInterval(setTime,100)
 }
 
+function timerHandle(value){
+  if (value<10){
+    value="0"+value;
+  }
+}
