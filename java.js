@@ -148,8 +148,10 @@ function setTime(){
   let hour= date.getHours();
   let minutes=date.getMinutes();
   let seconds=date.getSeconds();
-  let time=
-  console.log(time)
+  let time= hour + ":"+ minutes+":"+seconds
+ 
+
+  setInterval(setTime,100)
 }
 
 setTime();
