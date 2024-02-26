@@ -151,16 +151,21 @@ function setTime(){
   let minutes=date.getMinutes();
   let seconds=date.getSeconds();
 
-  minutes=timerHandle(minutes);
-  seconds=timerHandle(seconds);
+  // let minutes=timeHandle(date.getMinutes());
+  // let seconds=timeHandle(date.getSeconds());
+
   let time= hour + ":"+ minutes+":"+seconds
  
   document.getElementById('clock-show').innerText=time;
   setInterval(setTime,100)
 }
 
-function timerHandle(value){
+
+/*
+function timeHandle(value){
   if (value<10){
     value="0"+value;
+    return value
   }
 }
+*/
