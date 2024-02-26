@@ -33,7 +33,13 @@
     }
 
     function loadInfo(data){
+        const ol=document.getElementById('unOrderList');
+        
         for(let user of data){
-            console.log(user.name)
+            const li= document.createElement('li');
+            li.innerText=user.name;
+            ol.appendChild(li)
         }
     }
+
+    loadData3()
