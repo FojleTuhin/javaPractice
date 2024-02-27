@@ -2,44 +2,47 @@
 //     .then(response => response.json())
 //     .then(json => console.log(json))
 
-    // fetch('https://jsonplaceholder.typicode.com/todos/1')
-    // .then(res=> res.json())
-    // .then(data=>console.log(data))
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// .then(res=> res.json())
+// .then(data=>console.log(data))
 
 
-    // fetch('https://jsonplaceholder.typicode.com/todos/1')
-    // .then(Response=> Response.json())
-    // .then(data=> console.log(data))
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// .then(Response=> Response.json())
+// .then(data=> console.log(data))
 
 
-   
 
-    function loadData(){
-        fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+function loadData() {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
         .then(res => res.json())
         .then(data => console.log(data))
-    }
+}
 
-    function loadData2(){
-        fetch('https://jsonplaceholder.typicode.com/users')
+function loadData2() {
+    fetch('https://jsonplaceholder.typicode.com/users')
         .then(Response => Response.json())
         .then(data => console.log(data))
-    }
+}
 
-    function loadData3(){
-        fetch('https://jsonplaceholder.typicode.com/users')
+function loadData3() {
+    fetch('https://jsonplaceholder.typicode.com/users')
         .then(Response => Response.json())
         .then(data => loadInfo(data))
-    }
+}
 
-    function loadInfo(data){
-        const ol=document.getElementById('unOrderList');
-        
-        for(let user of data){
-            const li= document.createElement('li');
-            li.innerText=user.name;
-            ol.appendChild(li)
-        }
-    }
+/*function loadInfo(data) {
+    const ol = document.getElementById('unOrderList');
 
-    loadData3()
+    for (let user of data) {
+        const li = document.createElement('li');
+        li.innerText = user.name;
+        ol.appendChild(li)
+    }
+}*/
+
+loadData3()
+
+const stuInfo = JSON.stringify({ name: "James", roll: 3 });
+console.log(stuInfo.name); 
