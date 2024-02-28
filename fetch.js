@@ -70,5 +70,24 @@ const dreamGirl = [
     },
 ];
 
-console.log(
-    dreamGirl[0].sokina.contactInfo[1].instagram)
+// console.log(dreamGirl[0].sokina.contactInfo[1].instagram)
+
+const phones = [
+    { name: "sony", price: 500 },
+    { name: "apple", price: 700 },
+    { name: "sony", price: 700 },
+];
+//    console.log(phones.filter((phone) => phone.price != 500))
+
+async function f() {
+    let result = 'first!';
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve('done!'), 1000);
+    });
+    result = await promise;
+    console.log(result);
+}
+f();
+
+
+
