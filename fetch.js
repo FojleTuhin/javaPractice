@@ -1,15 +1,15 @@
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-//     .then(response => response.json())
-//     .then(json => console.log(json))
+/*fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => console.log(json))
 
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-// .then(res=> res.json())
-// .then(data=>console.log(data))
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then(res=> res.json())
+.then(data=>console.log(data))
 
 
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-// .then(Response=> Response.json())
-// .then(data=> console.log(data))
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then(Response=> Response.json())
+.then(data=> console.log(data))
 
 
 
@@ -43,7 +43,9 @@ function loadInfo(data) {
     }
 }
 
-loadData3()
+*/
+
+// loadData3()
 
 const stuInfo = JSON.stringify({ name: "James", roll: 3 });
 // console.log(stuInfo.name); 
@@ -85,9 +87,29 @@ async function f() {
         setTimeout(() => resolve('done!'), 1000);
     });
     result = await promise;
-    console.log(result);
+    // console.log(result);
 }
 f();
+
+
+const myLoader = () =>{
+    return new Promise ((resolve,reject) =>{
+        const success= Math.random()
+        if(success<=0.5){
+            resolve(success)
+        }
+
+        else
+        {
+            reject(success)
+        }
+    })
+}
+// myLoader()
+// .then(data => console.log('resolved data', data))
+// .catch(err => console.log('rejected with value',err))
+
+
 
 
 
